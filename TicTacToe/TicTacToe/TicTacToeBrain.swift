@@ -7,19 +7,7 @@
 //
 
 import Foundation
-import UIKit
 
-struct TicTacToeBrain {
+class TicTacToeBrain {
   
-
 }
-
-func playGame(counter: Int) {
-    
-    if counter % 2 != 0 {
-        
-    } else {
-        
-    }
-}
-
