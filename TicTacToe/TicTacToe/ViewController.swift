@@ -10,11 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    @IBAction func buttonPressed(_ sender: UIButton) {
-        
-    }
-    
    
   override func viewDidLoad() {
     super.viewDidLoad()
