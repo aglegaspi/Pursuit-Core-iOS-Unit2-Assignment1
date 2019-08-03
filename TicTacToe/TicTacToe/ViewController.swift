@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var counter = 0
+    
+    @IBOutlet weak var buttonOne: UIButton!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
+        buttonOne.setTitle("x",for: .normal)
+        print("pressed \(sender.tag)")
+        counter += 1
     }
     
    
