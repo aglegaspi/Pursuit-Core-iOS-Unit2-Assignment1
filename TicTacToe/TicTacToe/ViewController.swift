@@ -11,9 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        self.buttonOne.setTitle("X", for: .normal)
+        if sender.tag == 1 {
+            self.buttonOne.setTitle("X", for: .normal)
+        } else if sender.tag == 2 {
+            self.buttonTwo.setTitle("O", for: .normal)
+        }
     }
     
   override func viewDidLoad() {
