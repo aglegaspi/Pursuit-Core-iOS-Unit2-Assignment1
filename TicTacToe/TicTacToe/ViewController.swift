@@ -9,8 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-   
+    
+    @IBOutlet weak var buttonOne: UIButton!
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        self.buttonOne.setTitle("X", for: .normal)
+    }
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
