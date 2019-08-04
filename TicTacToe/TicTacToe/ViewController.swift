@@ -18,7 +18,8 @@ class ViewController: UIViewController {
         
         for button in buttons {
             if button.tag == sender.tag {
-                
+                print("this is the btn \(button.tag)")
+                print("this is the sndr \(sender.tag)")
             button.setTitle(playGame, for: .normal)
                 
             }
