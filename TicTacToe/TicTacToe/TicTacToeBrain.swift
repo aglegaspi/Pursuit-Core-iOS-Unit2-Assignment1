@@ -8,6 +8,9 @@
 
 import Foundation
 
-class TicTacToeBrain {
+struct TicTacToeBrain {
   
+    static var playerOne = "X"
+    
+
 }

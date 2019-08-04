@@ -166,15 +166,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonEight" destination="bPk-hQ-crf" id="v9M-q5-zcY"/>
-                        <outlet property="buttonFive" destination="aay-7e-CDw" id="V4h-3a-mRy"/>
-                        <outlet property="buttonFour" destination="QJY-2X-AMs" id="YtM-uh-ezu"/>
-                        <outlet property="buttonNine" destination="twO-fn-fMW" id="Jxy-yA-Znf"/>
-                        <outlet property="buttonOne" destination="iAP-gp-zbQ" id="wfe-Fl-IJh"/>
-                        <outlet property="buttonSeven" destination="cbq-0B-Y4F" id="dIp-HK-N8S"/>
-                        <outlet property="buttonSix" destination="tiP-mB-H1C" id="Ejp-iP-hTz"/>
-                        <outlet property="buttonThree" destination="FvL-2f-bOh" id="3sT-n3-v26"/>
-                        <outlet property="buttonTwo" destination="NeL-xl-1RK" id="3YA-sN-Wrx"/>
+                        <outletCollection property="buttons" destination="cbq-0B-Y4F" collectionClass="NSMutableArray" id="b0J-gJ-Kj4"/>
+                        <outletCollection property="buttons" destination="iAP-gp-zbQ" collectionClass="NSMutableArray" id="p1d-zQ-bGa"/>
+                        <outletCollection property="buttons" destination="NeL-xl-1RK" collectionClass="NSMutableArray" id="3pp-3E-zf3"/>
+                        <outletCollection property="buttons" destination="FvL-2f-bOh" collectionClass="NSMutableArray" id="4RX-1M-wiv"/>
+                        <outletCollection property="buttons" destination="QJY-2X-AMs" collectionClass="NSMutableArray" id="gPN-Jw-axa"/>
+                        <outletCollection property="buttons" destination="aay-7e-CDw" collectionClass="NSMutableArray" id="gBq-jQ-5aA"/>
+                        <outletCollection property="buttons" destination="tiP-mB-H1C" collectionClass="NSMutableArray" id="6yJ-sN-2zN"/>
+                        <outletCollection property="buttons" destination="bPk-hQ-crf" collectionClass="NSMutableArray" id="3cL-pX-BwC"/>
+                        <outletCollection property="buttons" destination="twO-fn-fMW" collectionClass="NSMutableArray" id="0g3-Mx-hTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

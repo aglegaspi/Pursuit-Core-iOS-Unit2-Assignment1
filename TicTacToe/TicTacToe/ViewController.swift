@@ -9,42 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var playGame = TicTacToeBrain.playerOne
     
-    @IBOutlet weak var buttonOne: UIButton!
-    @IBOutlet weak var buttonTwo: UIButton!
-    @IBOutlet weak var buttonThree: UIButton!
-    @IBOutlet weak var buttonFour: UIButton!
-    @IBOutlet weak var buttonFive: UIButton!
-    @IBOutlet weak var buttonSix: UIButton!
-    @IBOutlet weak var buttonSeven: UIButton!
-    @IBOutlet weak var buttonEight: UIButton!
-    @IBOutlet weak var buttonNine: UIButton!
+    
+    @IBOutlet var buttons: [UIButton]!
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        switch sender.tag {
-            
-        case 1:
-            self.buttonOne.setTitle("X", for: .normal)
-        case 2:
-            self.buttonTwo.setTitle("O", for: .normal)
-        case 3:
-            self.buttonThree.setTitle("X", for: .normal)
-        case 4:
-            self.buttonFour.setTitle("O", for: .normal)
-        case 5:
-            self.buttonFive.setTitle("X", for: .normal)
-        case 6:
-            self.buttonSix.setTitle("O", for: .normal)
-        case 7:
-            self.buttonSeven.setTitle("X", for: .normal)
-        case 8:
-            self.buttonEight.setTitle("O", for: .normal)
-        case 9:
-            self.buttonNine.setTitle("X", for: .normal)
-        default:
-            self.buttonOne.setTitle("", for: .normal)
-        }
         
+        for button in buttons {
+            if button.tag == sender.tag {
+                
+            button.setTitle(playGame, for: .normal)
+                
+            }
+        }
     }
         
         override func viewDidLoad() {

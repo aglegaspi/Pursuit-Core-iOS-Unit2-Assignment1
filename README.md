@@ -18,8 +18,11 @@ For this assignment, you will be bringing Tic Tac Toe to life on your own.
 
 Do worry about:
 1. Alternating turns. After a player has placed down an X, the next tap must be an O.
+
 1. Your layout must include a label to display whose turn it is and another label to keep count of the wins.
+
 1. You must include a reset button. This resets the game, of course.
+
 1. Win condition checking. 3-in-a-row means the game is over, so no more moves should be allowed until the reset button is tapped.
 
 Don't worry about:
