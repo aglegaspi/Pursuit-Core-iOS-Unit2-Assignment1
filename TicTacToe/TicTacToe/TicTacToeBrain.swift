@@ -9,25 +9,8 @@
 import Foundation
 
 struct TicTacToeBrain {
-    static var numberOfMoves = 1
-    static let playerOne = "X"
-    static let playerTwo = "O"
-    
-    static func playGame() -> String {
-        
-    if numberOfMoves % 2 == 1 {
-        numberOfMoves += 1
-        return playerOne
-        
-    } else {
-        numberOfMoves += 1
-        return playerTwo
-    }
-        
-
-        
-        
-    }
+  
+    static var playerOne = "X"
     
 
 }

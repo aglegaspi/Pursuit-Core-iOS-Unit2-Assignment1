@@ -14,6 +14,9 @@
 		57A2EF512194DBB0009B12CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A2EF4F2194DBB0009B12CA /* LaunchScreen.storyboard */; };
 		57A2EF592194DBFD009B12CA /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2EF582194DBFD009B12CA /* GameButton.swift */; };
 		57A2EF5B2194DC83009B12CA /* TicTacToeBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */; };
+		EC1D640822FA17EF00F1DB1B /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1D640722FA17EF00F1DB1B /* Players.swift */; };
+		EC1D640A22FA184F00F1DB1B /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1D640922FA184F00F1DB1B /* Symbol.swift */; };
+		EC1D640C22FA19EF00F1DB1B /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC1D640B22FA19EF00F1DB1B /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		57A2EF522194DBB0009B12CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57A2EF582194DBFD009B12CA /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeBrain.swift; sourceTree = "<group>"; };
+		EC1D640722FA17EF00F1DB1B /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		EC1D640922FA184F00F1DB1B /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		EC1D640B22FA19EF00F1DB1B /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				57A2EF462194DBAF009B12CA /* AppDelegate.swift */,
 				57A2EF482194DBAF009B12CA /* ViewController.swift */,
 				57A2EF4A2194DBAF009B12CA /* Main.storyboard */,
+				EC1D640722FA17EF00F1DB1B /* Players.swift */,
+				EC1D640922FA184F00F1DB1B /* Symbol.swift */,
+				EC1D640B22FA19EF00F1DB1B /* GameState.swift */,
 				57A2EF582194DBFD009B12CA /* GameButton.swift */,
 				57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */,
 				57A2EF4D2194DBB0009B12CA /* Assets.xcassets */,
@@ -141,10 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1D640C22FA19EF00F1DB1B /* GameState.swift in Sources */,
 				57A2EF492194DBAF009B12CA /* ViewController.swift in Sources */,
+				EC1D640822FA17EF00F1DB1B /* Players.swift in Sources */,
 				57A2EF592194DBFD009B12CA /* GameButton.swift in Sources */,
 				57A2EF472194DBAF009B12CA /* AppDelegate.swift in Sources */,
 				57A2EF5B2194DC83009B12CA /* TicTacToeBrain.swift in Sources */,
+				EC1D640A22FA184F00F1DB1B /* Symbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
