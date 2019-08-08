@@ -20,15 +20,21 @@ class ViewController: UIViewController {
         let result = model.checkGameState()
         
         switch result {
+            
         case .player1wins:
             updateButtons(row: sender.row, col: sender.col, player: player)
             print("player 1 wins")
+            disableButtons()
+            
         case .player2wins:
             updateButtons(row: sender.row, col: sender.col, player: player)
             print("player 2 wins")
+            disableButtons()
+            
         case .ongoing:
             updateButtons(row: sender.row, col: sender.col, player: player)
             player.alternate()
+            
         case .tie:
             print("tie?")
         }
@@ -38,6 +44,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func disableButtons() {
+        for button in allButtons {
+            button.isEnabled = false
+        }
     }
     
     func updateButtons(row: Int,col: Int, player: Player) {
