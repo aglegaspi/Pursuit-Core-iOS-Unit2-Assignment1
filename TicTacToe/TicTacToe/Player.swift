@@ -9,15 +9,17 @@
 import Foundation
 
 enum Player {
-    case playerOne
-    case playerTwo
+    case player1
+    case player2
     
     mutating func alternate() {
         switch self {
-        case .playerOne:
-            self = .playerTwo
-        case .playerTwo:
-            self = .playerOne
+            
+        case .player1:
+            self = .player2
+            
+        case .player2:
+            self = .player1
         }
     }
 }
