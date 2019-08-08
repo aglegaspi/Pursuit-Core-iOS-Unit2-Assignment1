@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     var player = Player.player1
     
     @IBOutlet var allButtons: [GameButton]!
+    @IBOutlet weak var playerStatus: UILabel!
+    
     
     @IBAction func buttonPressed(_ sender: GameButton) {
         model.updateGameBoard(player: player, row: sender.row, col: sender.col)
@@ -23,17 +25,18 @@ class ViewController: UIViewController {
             
         case .player1wins:
             updateButtons(row: sender.row, col: sender.col, player: player)
-            print("player 1 wins")
+            playerStatus.text = "player 1 wins"
             disableButtons()
             
         case .player2wins:
             updateButtons(row: sender.row, col: sender.col, player: player)
-            print("player 2 wins")
+            playerStatus.text = "player 2 wins"
             disableButtons()
             
         case .ongoing:
             updateButtons(row: sender.row, col: sender.col, player: player)
             player.alternate()
+            playerStatus.text = "\(player.rawValue) make your move!"
             
         case .tie:
             print("tie?")

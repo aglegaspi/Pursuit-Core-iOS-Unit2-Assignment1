@@ -62,18 +62,34 @@
 		57A2EF452194DBAF009B12CA /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				57A2EF462194DBAF009B12CA /* AppDelegate.swift */,
+				EC1F542622FC89E5005683FD /* Supporting Files */,
 				57A2EF482194DBAF009B12CA /* ViewController.swift */,
 				57A2EF4A2194DBAF009B12CA /* Main.storyboard */,
+				EC1F542722FC89FC005683FD /* Models */,
+				57A2EF4D2194DBB0009B12CA /* Assets.xcassets */,
+				57A2EF522194DBB0009B12CA /* Info.plist */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		EC1F542622FC89E5005683FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57A2EF462194DBAF009B12CA /* AppDelegate.swift */,
+				57A2EF4F2194DBB0009B12CA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC1F542722FC89FC005683FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				EC1D640722FA17EF00F1DB1B /* Player.swift */,
 				EC1D640B22FA19EF00F1DB1B /* GameState.swift */,
 				57A2EF582194DBFD009B12CA /* GameButton.swift */,
 				57A2EF5A2194DC83009B12CA /* TicTacToeBrain.swift */,
-				57A2EF4D2194DBB0009B12CA /* Assets.xcassets */,
-				57A2EF4F2194DBB0009B12CA /* LaunchScreen.storyboard */,
-				57A2EF522194DBB0009B12CA /* Info.plist */,
 			);
-			path = TicTacToe;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

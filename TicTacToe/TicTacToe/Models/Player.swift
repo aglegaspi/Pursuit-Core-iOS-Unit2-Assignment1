@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Player {
+enum Player: String {
     case player1
     case player2
     

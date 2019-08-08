@@ -238,6 +238,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="playerStatus" destination="xDG-PB-WMP" id="vpz-dA-5vF"/>
                         <outletCollection property="allButtons" destination="iAP-gp-zbQ" collectionClass="NSMutableArray" id="Mzp-GK-Kbi"/>
                         <outletCollection property="allButtons" destination="NeL-xl-1RK" collectionClass="NSMutableArray" id="LCR-iq-Oqx"/>
                         <outletCollection property="allButtons" destination="FvL-2f-bOh" collectionClass="NSMutableArray" id="gq0-H9-rBh"/>
