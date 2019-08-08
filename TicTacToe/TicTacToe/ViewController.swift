@@ -42,7 +42,9 @@ class ViewController: UIViewController {
             playerStatus.text = "\(player.rawValue) make your move!"
             
         case .tie:
-            print("tie?")
+            updateButtons(row: sender.row, col: sender.col, player: player)
+            playerStatus.text = "omg..a tie!"
+            playAgainButton.isHidden = false
         }
     }
     
@@ -64,12 +66,17 @@ class ViewController: UIViewController {
     }
     
     func resetGame() {
+        
         for button in allButtons {
-            if button.titleLabel?.text != nil {
-            button.setTitle(nil, for: .normal)
+            
+            button.setTitle("", for: .normal)
             button.isEnabled = true
-            }
+            
+        
         }
+        model.gameBoard = [["-", "-", "-"], //row 0
+            ["-", "-", "-"], //row 1
+            ["-", "-", "-"]] //row 2
         
         player = Player.player1
         playerStatus.text = "\(player.rawValue) make your move!"
@@ -79,6 +86,7 @@ class ViewController: UIViewController {
     }
     
     func updateButtons(row: Int,col: Int, player: Player) {
+        
         for button in allButtons {
             
             if button.row == row && button.col == col {
