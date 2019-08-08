@@ -66,7 +66,9 @@ class TicTacToeBrain {
         }
         
         //tie
-        
+            if !gameBoard[0].contains("-") && !gameBoard[1].contains("-") && !gameBoard[2].contains("-") {
+                return .tie
+            }
         
         return .ongoing
         
