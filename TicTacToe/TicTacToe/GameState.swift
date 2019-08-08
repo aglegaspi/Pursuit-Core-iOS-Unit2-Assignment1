@@ -9,9 +9,8 @@
 import Foundation
 
 enum GameState {
-    // you pass in player
-    case won(Players)
-    case lost(Players)
-    
+    case player1wins
+    case player2wins
+    case ongoing
     case tie
 }

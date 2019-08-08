@@ -8,15 +8,11 @@
 
 import Foundation
 
-enum Players {
+enum Player {
     case playerOne
     case playerTwo
     
-    var symbol: Symbol {
-        return Symbol(player: self)
-    }
-    
-    mutating func toggle() {
+    mutating func alternate() {
         switch self {
         case .playerOne:
             self = .playerTwo

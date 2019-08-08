@@ -10,7 +10,17 @@ import Foundation
 
 struct TicTacToeBrain {
   
-    static var playerOne = "X"
+    var gameBoard = [["-"],["-"],["-"],
+                        ["-"],["-"],["-"],
+                        ["-"],["-"],["-"]]
     
+    func updateGameBoard(player: Player, row: Int, col: Int) {
+    switch player {
+    case .player1:
+        gameBoard[row][col] = "O"
+    case .player2L:
+        gameBoard[row][col] = "X"
+        }
+    }
 
 }
